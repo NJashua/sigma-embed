@@ -1,0 +1,8 @@
+# netlify.toml
+
+[build]
+  functions = "netlify/functions"  # Specify the folder for serverless functions
+  publish = "build"                # Directory for static files after React app is built
+
+[functions]
+  node_bundler = "esbuild"
